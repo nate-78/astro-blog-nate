@@ -1,0 +1,106 @@
+:root {
+  --background-color-main: #f5f5f5;
+  --background-color-black: #292A36;
+  --font-color-main: #333;
+  --font-color-light: #f5f5f5;
+  --shadow: 0 2px 6px 0px rgba(0 0 0 / 20%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-main: #292A36;
+    --background-color-black: #111;
+    --font-color-main: #f5f5f5;
+    --shadow: 0 2px 6px 0px rgba(0 0 0 / 50%);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color-main);
+  color: var(--font-color-main);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: 87vh;
+  padding-top: 80px;
+}
+
+a {
+  color: #f15657;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background: var(--background-color-main);
+  box-shadow: var(--shadow);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  height: 80px;
+  width: 175px;
+  background-image: url('/logo-sm.webp');
+  background-size: contain;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    background-image: url('/logo-sm-white/webp');
+  }
+}

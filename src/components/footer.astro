@@ -1,0 +1,29 @@
+<footer>
+  <div class="container">
+    &copy; <span id="year"></span>
+  </div>
+
+  <script is:inline>
+    const year = new Date().getFullYear();
+    document.querySelector('#year').innerHTML = year;
+  </script>
+</footer>
+
+<style>
+  footer {
+    background: var(--background-color-black);
+    color: var(--font-color-light);
+    margin-top: 3rem;
+    padding: 2rem 0;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #year {
+    margin-left: .3rem;
+  }
+</style>
