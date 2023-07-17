@@ -101,6 +101,6 @@ header .container {
 
 @media (prefers-color-scheme: dark) {
   .logo {
-    background-image: url('/logo-sm-white/webp');
+    background-image: url('/logo-sm-white.webp');
   }
 }
